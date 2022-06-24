@@ -1,4 +1,4 @@
-package com.customrecyclerviewapp
+package com.rahulparmar
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter

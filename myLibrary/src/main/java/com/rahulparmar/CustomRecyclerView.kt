@@ -1,4 +1,4 @@
-package com.customrecyclerviewapp
+package com.rahulparmar
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.customrecyclerviewapp.R
 import com.customrecyclerviewapp.databinding.LayoutRecyclerViewWithSwipToRefreshBinding
 
 class CustomRecyclerView : ConstraintLayout {
@@ -81,7 +82,7 @@ class CustomRecyclerView : ConstraintLayout {
 
     var recyclerView : RecyclerView? = null
 
-    var listener : CustomRecyclerView.RecyclerViewEventListener?=null
+    var listener : RecyclerViewEventListener?=null
     set(value) {
         
         field=value
@@ -146,7 +147,7 @@ class CustomRecyclerView : ConstraintLayout {
             LayoutInflater.from(context),this
         )
 
-        var typedarray=context.obtainStyledAttributes(attrs,R.styleable.CustomRecyclerView)
+        var typedarray=context.obtainStyledAttributes(attrs, R.styleable.CustomRecyclerView)
         swipeRefreshEnabled=typedarray.getBoolean(R.styleable.CustomRecyclerView_swipe_refresh,true)
 
         when(typedarray.getInt(R.styleable.CustomRecyclerView_layout_manager, VERTICAL_LINEAR_LAYOUT)){

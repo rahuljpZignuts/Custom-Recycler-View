@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.customrecyclerview.sample.databinding.ActivityMainBinding
-import com.customrecyclerviewapp.CustomRecyclerView
+import com.rahulparmar.CustomRecyclerView
 
 import java.util.*
 
-class MainActivity : AppCompatActivity(),CustomRecyclerView.RecyclerViewEventListener {
+class MainActivity : AppCompatActivity(), CustomRecyclerView.RecyclerViewEventListener {
 
         private lateinit var binding : ActivityMainBinding
         override fun onCreate(savedInstanceState: Bundle?) {

@@ -13,5 +13,5 @@ pluginManagement {
 //    }
 //}
 rootProject.name = "CustomRecyclerViewApp"
-include ':app'
+include ':myLibrary'
 include ':sample'
