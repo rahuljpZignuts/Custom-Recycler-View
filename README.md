@@ -3,38 +3,35 @@ Useful Library to manage recycler view with shimmer Effect , progress bar and sw
 
 You can use it like : 
 
-<com.rahulparmar.CustomRecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:swipe_refresh="true"
-        app:shimmer_layout="@layout/sample_shimmer_layout"
-        app:shimmer_items="20"
-        app:layout_manager="vertical"
-        app:error_text="Something went wrong"
-        app:refresh_button_text="Do Refresh"
-        app:empty_text="No Data Found" />
+>       <com.rahulparmar.CustomRecyclerView
+>        app:swipe_refresh="true"
+>        app:shimmer_layout="@layout/sample_shimmer_layout"
+>        app:shimmer_items="20"
+>        app:layout_manager="vertical"
+>        app:error_text="Something went wrong"
+>        app:refresh_button_text="Do Refresh"
+>        app:empty_text="No Data Found" />
         
         
         
 # Methods for Use Shimmer Loading : 
-startShimmer() // start shimmer effect
-stopShimmer() // stop shimmer effect
-validateRecyclerViewData(size : Int) // to display empty text according to list size
-showError() or showError(error : String) //display error message with refresh button
+     startShimmer() // start shimmer effect\n
+     stopShimmer() // stop shimmer effect\n
+     validateRecyclerViewData(size : Int) // to display empty text according to list size\n
+     showError() or showError(error : String) //display error message with refresh button\n
 
 # Methods for Use ProgressBar Loading : 
-startProgress() // start shimmer effect
-stopProgress() // stop shimmer effect
-validateRecyclerViewData(size : Int) // to display empty text according to list size
-showError() or showError(error : String) //display error message with refresh button
+     startProgress() // start shimmer effect\n
+     stopProgress() // stop shimmer effect\n
+     validateRecyclerViewData(size : Int) // to display empty text according to list size\n
+     showError() or showError(error : String) //display error message with refresh button\n
 
 
 implement and set listener CustomRecyclerView.RecyclerViewEventListener
 
 interface methods ----{
-        fun onRefreshButtonClicked()
-        fun onSwipeRefresh()
+-         fun onRefreshButtonClicked()
+-         fun onSwipeRefresh()
     }
 
 
@@ -63,5 +60,3 @@ Step 2. Add the dependency
 	}
   
   That's it...
-  
-  
