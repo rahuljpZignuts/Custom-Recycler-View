@@ -15,14 +15,14 @@ You can use it like :
         
         
 # Methods for Use Shimmer Loading : 
-     startShimmer() // start shimmer effect\n
-     stopShimmer() // stop shimmer effect\n
+     startShimmer() // start shimmer effect
+     stopShimmer() // stop shimmer effect
      validateRecyclerViewData(size : Int) // to display empty text according to list size\n
      showError() or showError(error : String) //display error message with refresh button\n
 
 # Methods for Use ProgressBar Loading : 
-     startProgress() // start shimmer effect\n
-     stopProgress() // stop shimmer effect\n
+     startProgress() // start shimmer effect
+     stopProgress() // stop shimmer effect
      validateRecyclerViewData(size : Int) // to display empty text according to list size\n
      showError() or showError(error : String) //display error message with refresh button\n
 
